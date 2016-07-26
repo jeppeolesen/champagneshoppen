@@ -1,2 +1,30 @@
+header
+	width 960px
+	margin 0 auto
+	
+	.site-logo
+		display block
+		margin 2em auto 3em
+
 nav
-	//
+	border-bottom 1px solid black
+	
+	
+	ul
+		display flex
+		padding 0
+		margin 0
+		
+		li
+			flex-grow 1
+			text-align center
+			list-style-type none
+			text-transform uppercase
+			
+			a
+				color inherit
+				text-decoration none
+				transition color 0.3s $easeOutCubic
+				
+				&:hover
+					color grey
