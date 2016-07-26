@@ -24,6 +24,11 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
+		<?php if ( get_theme_mod( 'site_logo' ) ) : ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<img class="site-logo" src="<?php echo get_theme_mod( 'site_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+			</a>
+		<?php endif; ?>
 		<nav class="main">
 			<?php wp_nav_menu( array( 'theme_location' => 'navigation' ) ); ?>
 		</nav>
