@@ -1,0 +1,7 @@
+{
+  "localPath": "C:\\path\\to\\local\\wordpress\\themes\\",
+  "remoteHost": "sftp.domain.com",
+  "remotePath": "/path/to/wp-content/themes",
+  "remoteUser": "sftp-username",
+  "remotePassword": "sftp-password"
+}
