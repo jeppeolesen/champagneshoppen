@@ -55,6 +55,23 @@ get_header(); ?>
 								<?php endwhile; 
 							endif; ?>
 						</section>
+					<?php elseif( get_row_layout() == 'product' ) : ?>
+							<section class="product">
+								<div class="left">
+									<img src="<?php the_sub_field('image'); ?>">
+								</div>
+								<div class="right">
+									<div class="intro">
+										<h2 class="name"><?php the_sub_field('name'); ?></h2>
+										<h3 class="house"><?php the_sub_field('house'); ?></h3>
+										<span class="price"><?php the_sub_field('price'); ?></span>
+									</div>
+									<div class="columns">
+										<div class="column column-left"><?php the_sub_field('column_left'); ?></div>
+										<div class="column column-right"><?php the_sub_field('column_right'); ?></div>
+									</div>
+								</div>
+							</section>
 					<?php endif;
 				endwhile;
 			endif; ?>
