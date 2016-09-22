@@ -39,4 +39,20 @@
 	};
 
 	add_action( 'customize_register', 'copyright_notice' );
+
+	// Adds contact info to the footer
+	function footer_contact_info( $wp_customize ) {
+		$wp_customize -> add_setting( 'footer_contact_info' );
+		$wp_customize -> add_control( new WP_Customize_Control( $wp_customize, 'footer_contact_info',
+			array(
+				'label' => 'Contact Info',
+				'description' => 'Indtast kontaktinfo der vises i bunden af siden',
+				'section' => 'title_tagline',
+				'settings' => 'footer_contact_info',
+				'type' => 'textarea'
+			)
+		));
+	};
+
+	add_action( 'customize_register', 'footer_contact_info' );
 ?>
