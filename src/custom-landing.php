@@ -98,6 +98,25 @@ get_header(); ?>
 								<?php the_sub_field( 'text' ); ?>
 							</div>
 						</section>
+					<?php elseif( get_row_layout() == 'about_column2' ) : ?>
+						<section class="about column2">
+							<div class="column left">
+								<?php if( have_rows( 'images_1' ) ) :
+									while( have_rows( 'images_1' ) ) : the_row(); ?>
+										<img src="<?php the_sub_field('image'); ?>" alt="">
+									<?php endwhile; 
+								endif; ?>
+							</div>
+							<div class="column right">
+								<?php the_sub_field( 'text' ); ?>
+							</div>
+						</section>
+					<?php elseif( get_row_layout() == 'about_column1' ) : ?>
+						<section class="about column1">
+							<div class="column">
+								<?php the_sub_field( 'text' ); ?>
+							</div>
+						</section>
 					<?php endif;
 				endwhile;
 			endif; ?>
