@@ -402,7 +402,7 @@
                 {
                     "key": "57e3f1fbfacbb",
                     "name": "product",
-                    "label": "Product",
+                    "label": "Produkt",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -414,7 +414,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -433,7 +433,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -452,7 +452,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -471,7 +471,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "25",
                                 "class": "",
                                 "id": ""
                             },
@@ -495,7 +495,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
                                 "class": "",
                                 "id": ""
                             },
@@ -513,7 +513,125 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "",
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "57e42689fdd12",
+                    "name": "about_column3",
+                    "label": "Text + Billeder (3 kolonner)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57e426c7fdd13",
+                            "label": "Billeder - 1. kolonne",
+                            "name": "images_1",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57e426dcfdd14",
+                                    "label": "Billede",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_57e427cc5d6ea",
+                            "label": "Billeder - 2. kolonne",
+                            "name": "images_2",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "34",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": "",
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57e427cc5d6eb",
+                                    "label": "Billede",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_57e427d75d6ec",
+                            "label": "Tekst",
+                            "name": "text",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
                                 "class": "",
                                 "id": ""
                             },
@@ -543,8 +661,10 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1474557043
+    "modified": 1474571033
 }

@@ -68,16 +68,36 @@ get_header(); ?>
 								</div>
 								<div class="right">
 									<div class="intro">
-										<h2 class="name"><?php the_sub_field('name'); ?></h2>
-										<h3 class="house"><?php the_sub_field('house'); ?></h3>
-										<span class="price"><?php the_sub_field('price'); ?></span>
+										<h2 class="name"><?php the_sub_field( 'name' ); ?></h2>
+										<h3 class="house"><?php the_sub_field( 'house' ); ?></h3>
+										<span class="price"><?php the_sub_field( 'price' ); ?></span>
 									</div>
 									<div class="columns">
-										<div class="column column-left"><?php the_sub_field('column_left'); ?></div>
-										<div class="column column-right"><?php the_sub_field('column_right'); ?></div>
+										<div class="column column-left"><?php the_sub_field( 'column_left' ); ?></div>
+										<div class="column column-right"><?php the_sub_field( 'column_right' ); ?></div>
 									</div>
 								</div>
 							</section>
+					<?php elseif( get_row_layout() == 'about_column3' ) : ?>
+						<section class="about column3">
+							<div class="column left">
+								<?php if( have_rows( 'images_1' ) ) :
+									while( have_rows( 'images_1' ) ) : the_row(); ?>
+										<img src="<?php the_sub_field('image'); ?>" alt="">
+									<?php endwhile; 
+								endif; ?>
+							</div>
+							<div class="column center">
+								<?php if( have_rows( 'images_2' ) ) :
+									while( have_rows( 'images_2' ) ) : the_row(); ?>
+										<img src="<?php the_sub_field('image'); ?>" alt="">
+									<?php endwhile; 
+								endif; ?>
+							</div>
+							<div class="column right">
+								<?php the_sub_field( 'text' ); ?>
+							</div>
+						</section>
 					<?php endif;
 				endwhile;
 			endif; ?>
