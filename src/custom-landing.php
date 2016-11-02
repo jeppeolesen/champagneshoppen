@@ -26,7 +26,10 @@ get_header(); ?>
 								<a href="<?php the_sub_field('link_1'); ?>">
 									<h2><?php the_sub_field('text_1'); ?></h2>
 									<?php if( get_sub_field('image_1') ) : ?>
-										<img src="<?php the_sub_field('image_1'); ?>" alt="">
+										<div class="image-container">
+											<span class="image-text"><?php the_sub_field('image_1_text'); ?></span>
+											<img src="<?php the_sub_field('image_1'); ?>" alt="">
+										</div>
 									<?php endif; ?>
 								</a>
 							</div>
@@ -34,7 +37,10 @@ get_header(); ?>
 								<a href="<?php the_sub_field('link_2'); ?>">
 									<h2><?php the_sub_field('text_2'); ?></h2>
 									<?php if( get_sub_field('image_2') ) : ?>
-										<img src="<?php the_sub_field('image_2'); ?>" alt="">
+										<div class="image-container">
+											<span class="image-text"><?php the_sub_field('image_2_text'); ?></span>
+											<img src="<?php the_sub_field('image_2'); ?>" alt="">
+										</div>
 									<?php endif; ?>
 								</a>
 							</div>
@@ -42,7 +48,10 @@ get_header(); ?>
 								<a href="<?php the_sub_field('link_3'); ?>">
 									<h2><?php the_sub_field('text_3'); ?></h2>
 									<?php if( get_sub_field('image_3') ) : ?>
-										<img src="<?php the_sub_field('image_3'); ?>" alt="">
+										<div class="image-container">
+											<span class="image-text"><?php the_sub_field('image_3_text'); ?></span>
+											<img src="<?php the_sub_field('image_3'); ?>" alt="">
+										</div>
 									<?php endif; ?>
 								</a>
 							</div>
@@ -56,6 +65,7 @@ get_header(); ?>
 											<img src="<?php the_sub_field('image'); ?>" alt="">
 											<span class="name"><?php the_sub_field('name'); ?></span>
 											<span class="house"><?php the_sub_field('text'); ?></span>
+											<span class="price"><?php the_sub_field('price'); ?></span>
 										</div>
 									</a>
 								<?php endwhile; 
