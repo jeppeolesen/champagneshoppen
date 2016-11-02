@@ -155,6 +155,63 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_581a27ee9cc90",
+                            "label": "Billede 1 - Tekst",
+                            "name": "image_1_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_581a28099cc91",
+                            "label": "Billede 2 - Tekst",
+                            "name": "image_2_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_581a28159cc92",
+                            "label": "Billede 3 - Text",
+                            "name": "image_3_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_57b1ee7d7fdcf",
                             "label": "Billede 1",
                             "name": "image_1",
@@ -786,5 +843,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1478106621
+    "modified": 1478109218
 }
