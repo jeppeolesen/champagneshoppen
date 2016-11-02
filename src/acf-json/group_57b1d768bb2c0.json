@@ -351,6 +351,25 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_581a1d7fec096",
+                                    "label": "Pris",
+                                    "name": "price",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_57e3edcbc1d89",
                                     "label": "Billede",
                                     "name": "image",
@@ -767,5 +786,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1474572428
+    "modified": 1478106621
 }

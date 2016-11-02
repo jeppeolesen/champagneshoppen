@@ -56,6 +56,7 @@ get_header(); ?>
 											<img src="<?php the_sub_field('image'); ?>" alt="">
 											<span class="name"><?php the_sub_field('name'); ?></span>
 											<span class="house"><?php the_sub_field('text'); ?></span>
+											<span class="price"><?php the_sub_field('price'); ?></span>
 										</div>
 									</a>
 								<?php endwhile; 
