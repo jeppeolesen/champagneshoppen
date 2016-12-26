@@ -12,6 +12,19 @@
 		</div><!-- .site-content -->
 
 		<footer class="site-footer" role="contentinfo">
+			<div class="social-media">
+				<span><?php echo get_theme_mod( 'social_media_cta' ); ?></span>
+				<?php if ( get_theme_mod( 'social_media_facebook' ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'social_media_facebook' ); ?>">
+						<img src="<?php echo get_theme_mod( 'social_media_facebook_icon' ); ?>" alt="Facebook">
+					</a>
+				<?php endif; ?>
+				<?php if ( get_theme_mod( 'social_media_instagram' ) ) : ?>
+					<a href="<?php echo get_theme_mod( 'social_media_instagram' ); ?>">
+						<img src="<?php echo get_theme_mod( 'social_media_instagram_icon' ); ?>" alt="Instagram">
+					</a>
+				<?php endif; ?>
+			</div>
 			<div class="copyright">
 				<?php if ( get_theme_mod( 'footer_contact_info' ) ) : ?>
 					<p><?php echo get_theme_mod( 'footer_contact_info' ); ?></p>
